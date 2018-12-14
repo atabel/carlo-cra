@@ -1,6 +1,6 @@
 {
   "name": "carlo-cra",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "backend-context.js",
   "bin": {
     "carlo-cra-bundle": "./bundle.js"
