@@ -9,13 +9,8 @@
   "dependencies": {
     "@npm-chrome-extensions/react-devtools": "^3.4.2-dev.1",
     "carlo": "^0.9.42",
-    "chalk": "^2.4.1",
     "nodemon": "^1.18.7",
-    "pkg": "^4.3.5",
-    "react-dev-utils": "^6.1.1",
-    "react-scripts": "^2.1.1",
-    "webpack": "4.19.1",
-    "webpack-dev-server": "3.1.9"
+    "pkg": "^4.3.5"
   },
   "peerDependencies": {
     "react": ">=16.6.0"
