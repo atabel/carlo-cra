@@ -9,23 +9,26 @@ const openCarlo = async ({
   appName = "app",
   icon = null
 } = {}) => {
+  const isDev = url !== "/index.html";
   let app;
   try {
+    const reactChromeExtension = require("@npm-chrome-extensions/react-devtools");
     app = await carlo.launch({
       title: appName,
       icon: icon,
       localDataDir: path.join(os.homedir(), `.${appName}`),
-      // width: 1000,
-      // height: 500,
       channel: ["canary", "stable"],
-      args: ["--allow-insecure-localhost", "--allow-running-insecure-content"]
+      args: isDev
+        ? [
+            `--load-extensions:${reactChromeExtension}`,
+            `--disable-extensions-except=${reactChromeExtension}`
+          ]
+        : []
     });
   } catch (e) {
     console.error(e);
     return;
   }
-
-  const isDev = url !== "/index.html";
 
   if (!isDev) {
     app.serveFolder("build");

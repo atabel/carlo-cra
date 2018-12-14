@@ -7,6 +7,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@npm-chrome-extensions/react-devtools": "^3.4.2-dev.1",
     "carlo": "^0.9.42",
     "chalk": "^2.4.1",
     "nodemon": "^1.18.7",
