@@ -1,11 +1,22 @@
 {
   "name": "carlo-cra",
+  "keywords": [
+    "carlo",
+    "create react app",
+    "react",
+    "cra"
+  ],
   "version": "1.1.0",
   "main": "backend-context.js",
   "bin": {
     "carlo-cra-bundle": "./bundle.js"
   },
   "license": "MIT",
+  "homepage": "https://github.com/atabel/carlo-cra",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atabel/carlo-cra.git"
+  },
   "dependencies": {
     "@npm-chrome-extensions/react-devtools": "^3.4.2-dev.1",
     "carlo": "^0.9.42",
