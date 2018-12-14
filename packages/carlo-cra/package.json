@@ -6,7 +6,7 @@
     "react",
     "cra"
   ],
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "backend-context.js",
   "bin": {
     "carlo-cra-bundle": "./bundle.js"
